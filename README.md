@@ -1,6 +1,4 @@
-<!-- # FRONT -->
-
-# <=====> API <========> API <========>
+# Front API
 
 ` http://localhost/`
 
@@ -25,9 +23,7 @@
 /create/rooms => создание комнаты
 /create/service => создание сервиса
 
-<!-- # BACK -->
-
-# <=====> API <========> API <========> API <=====>`
+# BACK API
 
 - хост => http://localhost:4000`
 - Авторизация => через JWT TOKEN, токен даётся на 30 мин`
