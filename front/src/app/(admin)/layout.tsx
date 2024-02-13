@@ -6,7 +6,5 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  console.log("document.cookie")
-
   return <div className="test">{children}</div>
 }
