@@ -1,18 +1,12 @@
-import Link from "next/link"
+import Home from "@/component/screens/home/Home"
+import Header from "@/component/ui/header/Header"
 
-export default function Home() {
+export default function index() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col">
-        <Link href="/test">Номера</Link>
-        <Link href="/news">Новости</Link>
+    <main className="">
+      <Header />
 
-        <Link href="/auth">Авторизация</Link>
-
-        <Link href="/test">Рестораны</Link>
-        <Link href="/test">Услуги</Link>
-        <Link href="/test">Бронирование</Link>
-      </div>
+      <Home />
     </main>
   )
 }
