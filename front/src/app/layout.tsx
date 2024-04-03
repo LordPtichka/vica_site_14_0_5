@@ -1,34 +1,5 @@
-import localFont from "next/font/local"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
 import "./globals.css"
-
-const Fors = localFont({
-  src: [
-    {
-      path: "../component/fonts/Fors/ForsLight.ttf",
-      weight: "300",
-      style: "normal",
-    },
-  ],
-})
-
-const Ramillas = localFont({
-  src: [
-    {
-      path: "../component/fonts/Ramillas/RamillasMedium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../component/fonts/Ramillas/RamillasBold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-})
-
-const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,7 +9,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={(inter.className, Fors.className)}>{children}</body>
+      <body className={""}>{children}</body>
     </html>
   )
 }

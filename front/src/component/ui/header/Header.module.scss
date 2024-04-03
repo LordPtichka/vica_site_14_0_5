@@ -4,12 +4,13 @@
   z-index: 10;
 }
 .header {
-  max-width: 1050px;
+  max-width: 1110px;
+  padding: 0px 30px;
   height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: blueviolet;
+  // background: blueviolet;
   margin: auto;
 
   .header_block_link {

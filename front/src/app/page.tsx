@@ -5,7 +5,6 @@ export default function index() {
   return (
     <main className="">
       <Header />
-
       <Home />
     </main>
   )
