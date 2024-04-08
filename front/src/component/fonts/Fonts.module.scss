@@ -1,6 +1,13 @@
 // ====================================
 @font-face {
   font-family: "Ramillas";
+  src: url("./Ramillas/300RamillasLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ramillas";
   src: url("./Ramillas/400RamillasRegular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
@@ -33,12 +40,24 @@
   color: white;
 }
 
+.Ramillas_300 {
+  font-family: "Ramillas";
+  font-weight: 300;
+  font-style: normal;
+}
+
 .Ramillas_400 {
   font-family: "Ramillas";
   font-weight: 400;
   font-style: normal;
 }
 
+.Ramillas_500 {
+  font-family: "Ramillas";
+  font-weight: 500;
+  font-style: normal;
+}
+// ==================================
 .Fors_300 {
   font-family: "Fors";
   font-weight: 300;

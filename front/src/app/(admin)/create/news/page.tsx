@@ -2,7 +2,7 @@
 import { MouseEvent, useState } from "react"
 
 export default function AuthPage() {
-  console.log(document.cookie)
+  // console.log(document.cookie)
 
   return (
     <div>
