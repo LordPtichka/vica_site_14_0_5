@@ -1,4 +1,4 @@
-// ====================================
+// Подключение шрифтов
 @font-face {
   font-family: "Ramillas";
   src: url("./Ramillas/300RamillasLight.ttf") format("truetype");
@@ -26,7 +26,7 @@
   font-weight: 700;
   font-style: normal;
 }
-// ====================================
+
 @font-face {
   font-family: "Fors";
   src: url("./Fors/300ForsLight.ttf") format("truetype");
@@ -34,8 +34,6 @@
   font-style: normal;
 }
 
-// ====================================
-// ====================================
 // =======> FONTS COLOR <=========
 .color_white {
   color: #ffffff;
@@ -67,7 +65,7 @@
   font-weight: 500;
   font-style: normal;
 }
-// ==================================
+
 .Fors_300 {
   font-family: "Fors";
   font-weight: 300;

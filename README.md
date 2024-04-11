@@ -1,6 +1,6 @@
 # ====> Front API <====
 
-` http://localhost/`
+`http://localhost/`
 
 ## пользовательские страницы
 
