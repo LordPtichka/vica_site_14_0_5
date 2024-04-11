@@ -36,10 +36,20 @@
 
 // ====================================
 // ====================================
-.font-color-white {
-  color: white;
+// =======> FONTS COLOR <=========
+.color_white {
+  color: #ffffff;
 }
 
+.color_orange {
+  color: #d27604;
+}
+// =======> FONTS SIZE <=========
+
+.title_48 {
+  font-size: 48px;
+}
+// =======> FONTS FAMILY<=========
 .Ramillas_300 {
   font-family: "Ramillas";
   font-weight: 300;
