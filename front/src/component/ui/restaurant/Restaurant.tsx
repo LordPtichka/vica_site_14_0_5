@@ -13,10 +13,10 @@ export default function Restaurant() {
       <div className={styles.block_img}></div>
       <div className={styles.block_info}>
         <div className={``}>
-          <b className={`${styles.Ramillas_500} ${fonts.color_orange} ${fonts.title_48}`}>Ресторан</b>
+          <b className={`${styles.Ramillas_500} ${fonts.color_orange} ${fonts.title_48}`}>Ресторан </b>
           <b className={`${styles.Ramillas_500} ${fonts.color_black} ${fonts.title_48}`}>Вкус</b>
         </div>
-        <div>
+        <div className={`${fonts.Fors_300} ${fonts}`}>
           Открытая летняя терраса, с панорамным видом на старый город. Закаты на нашей террасе особенно впечатляют. Обширная винная карта и обновленное меню, а также прекрасная пицца в неаполитанском
           стиле ждут вас.
         </div>
