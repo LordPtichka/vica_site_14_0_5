@@ -7,7 +7,7 @@ export default function Footer() {
             <section className={styles.footer_top}>
                 <div className={styles.footer_nav}>
                     <ul>
-                        <li className={`${styles.footer_nav_title}`} font-for-title>Отель</li>
+                        <li className={`${styles.footer_nav_title} ${fonts.font_for_title}`} font-for-title>Отель</li>
                         <li class="footer_nav_menu"><a class="font-for-link font-color-orange" href="">Номера</a></li>
                         <li class="footer_nav_menu"><a class="font-for-link font-color-orange" href="">Бронирование</a></li>
                         <li class="footer_nav_menu"><a class="font-for-link font-color-orange" href="">Банный комплекс</a></li>
