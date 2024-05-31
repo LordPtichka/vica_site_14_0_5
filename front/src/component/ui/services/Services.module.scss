@@ -1,0 +1,120 @@
+.services {
+    border-top: 1px solid rgba(89, 89, 89, 0.2);
+    padding-top: 50px;
+}
+
+.title {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+.grid_services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding-bottom: 50px;
+}
+
+.block_service {
+    display: flex;
+    flex-direction: column;
+
+    width: 510px;
+}
+
+.img_service {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.name_service {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.block_info_service {
+    display: flex;
+    justify-content: space-between;
+
+    .text_service {
+        max-width: 325px;
+
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; // Определяем количество строк перед достижением многоточия
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    .btn_service {
+        border: 1px solid #b06101;
+        border-radius: 10px;
+        margin: auto 0;
+
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        align-content: center;
+        cursor: pointer;
+
+        transition: 400ms;
+
+        &:hover {
+            background: #b06101;
+            color: #fff;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    /* Временый адаптив */
+    
+    .services {
+        padding-top: 20px;
+    }
+
+    .img_service {
+        margin-bottom: 10px;
+    }
+
+    .grid_services {
+        row-gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .block_info_service {
+        display: flex;
+        flex-direction: column;
+    
+        .text_service {
+            width: 100%;
+        }
+        
+        .btn_service {
+            border: 1px solid #b06101;
+            border-radius: 10px;
+            margin: 10px 0;
+    
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            align-content: center;
+            cursor: pointer;
+    
+            transition: 400ms;
+    
+            &:hover {
+                background: #b06101;
+                color: #fff;
+            }
+        }
+    
+    }
+}

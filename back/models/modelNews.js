@@ -13,6 +13,7 @@ const ModelNews = (sequelizeMethod) => {
       description: { type: Sequelize.STRING },
       imagePath: { type: Sequelize.STRING },
       category: { type: Sequelize.STRING },
+      status: { type: Sequelize.STRING },
     },
     { timestamps: true }
   )

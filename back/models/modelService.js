@@ -11,8 +11,9 @@ const ModelService = (sequelizeMethod) => {
       },
       title: { type: Sequelize.STRING },
       description: { type: Sequelize.STRING },
-      price: { type: Sequelize.NUMBER },
       imagePath: { type: Sequelize.STRING },
+      status: { type: Sequelize.STRING },
+      price: { type: Sequelize.NUMBER },
     },
     { timestamps: true }
   )

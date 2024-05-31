@@ -7,6 +7,7 @@ import { useEffect } from "react"
 import styles from "./Traveline.module.scss"
 
 export default function Traveline() {
+  "use client"
   useEffect(() => {
     ;(function (w) {
       var q = [["setContext", "TL-INT-victoria-hotel_2023-05-22", "ru"]]

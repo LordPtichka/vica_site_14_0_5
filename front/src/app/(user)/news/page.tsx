@@ -1,3 +1,3 @@
 export default function NewsPage() {
-  return <div>news</div>
+  return <div>Новости</div>
 }

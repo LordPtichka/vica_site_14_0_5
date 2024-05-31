@@ -26,7 +26,7 @@ import routerService from "./router/routeRoom.js"
 app.use("/", routerMain)
 app.use("/news", routerNews)
 app.use("/room", routerRoom)
-app.use("/service", routerService)
+// app.use("/service", routerService)
 
 // =========> SERVER <====================================
 

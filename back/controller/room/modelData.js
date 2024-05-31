@@ -23,9 +23,12 @@ const BDcreateRoom = async (data) => {
   const result = await Model.dataRoom.create({
     category: data.category,
     title: data.title,
-    description: data.description,
+    descriptionFull: data.descriptionFull,
+    descriptionShort: data.descriptionShort,
     price: data.price,
     imagePath: data.imagePath,
+    area: data.area,
+    capacity: data.capacity,
   })
   return result.dataValues
 }
@@ -37,9 +40,12 @@ const BDupdateRoom = async (data, id) => {
   await result.update({
     category: data.category,
     title: data.title,
-    description: data.description,
+    descriptionFull: data.descriptionFull,
+    descriptionShort: data.descriptionShort,
     price: data.price,
     imagePath: data.imagePath,
+    area: data.area,
+    capacity: data.capacity,
   })
   return await result.dataValues
 }

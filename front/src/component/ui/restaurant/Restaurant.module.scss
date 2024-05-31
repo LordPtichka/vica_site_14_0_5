@@ -1,0 +1,113 @@
+
+.block_restaurant {
+    border-top: 1px solid rgba(89, 89, 89, 0.2);
+    padding: 50px 0;
+    gap: 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_rest {
+    width: 100%;
+    height: 340px;
+    
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    
+    transition: 400ms;
+    cursor: pointer;
+
+    .text_in_img {
+        display: none;
+
+        height: 100%;
+        text-align: center;
+        align-content: center;
+
+        transition: 400ms;
+    }
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+
+        .text_in_img {
+            display: block;
+        }
+    }
+}
+
+.block_information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 510px;
+
+    .block_text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+
+        .title_rest {
+            text-transform: uppercase;
+        }
+
+        .title_h3 {
+            text-transform: uppercase;
+        }
+
+        .text_of_rest {
+            text-align: justify;
+        }
+    } 
+    
+    .block_time_and_btn {
+        display: flex;
+        justify-content: space-between;
+
+        .block_time {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+
+    .block_btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .btn {
+            border: 1px solid #d27604;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            transition: 400ms;
+            cursor: pointer;
+
+            width: 250px;
+            height: 40px;
+
+            &:hover {
+                background: #d27604;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+    .block_restaurant {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .block_restaurant:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+}

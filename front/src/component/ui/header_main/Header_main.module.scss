@@ -1,0 +1,100 @@
+// #header_scroll {
+//     margin-top: 200px;
+//     position: fixed;
+//     width: 100%;
+//     z-index: 10;
+// }
+
+.header_wrap {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    transform: translateY(-200px);
+    transition: 400ms;
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 0 30px;
+    max-width: 1100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.25);
+  
+    .header_block_link {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+  
+      .text_link {
+        letter-spacing: 0.05em;
+        text-align: center;
+        transition: 400ms;
+  
+        &:hover {
+          color: #d27604; 
+        }
+      }
+    }
+
+    .btn_block {
+      display: flex;
+      gap: 15px;
+
+      .btn_link_contacts{
+        width: 45px;
+        height: 45px;
+    
+        text-align: center;
+        align-content: center;
+        
+        border-radius: 100px;
+        border: #d27604 solid 2px;
+        transition: 400ms;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .svg_contact {
+          width: 70%;
+          height: 70%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #262626;
+          transition: 400ms;
+        }
+  
+        &:hover {
+  
+          background-color: #d27604;
+  
+          .svg_contact {
+            background-color: #fff;
+            
+          }
+        }
+      }
+
+      .btn_link {
+        width: 220px;
+        height: 45px;
+        border-radius: 20px;
+        border: #d27604 solid 2px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 400ms;
+    
+        &:hover {
+          background-color: #d27604;
+          color: white; 
+        }
+      }
+    }
+  }

@@ -1,0 +1,84 @@
+
+.rooms {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    .img_room {
+        width: 100%;
+        max-width: 400px;
+        height: 250px;
+
+        border-radius: 20px;
+        
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .block_information_room {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .block_text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .block_description {
+            display: flex;
+            justify-content: space-between;
+
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+    }
+
+    .block_data {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+
+        .data_content {
+            display: flex;
+            gap: 10px;
+
+            align-items: center;
+        }
+
+        .capacity {
+            width: 40px;
+            height: 40px;
+            background-color: #d27604;
+        }
+
+        .area {
+            width: 40px;
+            height: 40px;
+            background-color: #d27604;  
+        }
+        
+        .btn {
+            border: 1px solid #d27604;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            transition: 400ms;
+            cursor: pointer;
+
+            width: 200px;
+            height: 40px;
+
+            &:hover {
+                background: #d27604;
+                color: #fff;
+            }
+        }
+    }
+}
+

@@ -1,15 +1,51 @@
 .section_stocks {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-top: 50px;
   padding-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+
+  align-items: center;
 }
-.block_title {
-  font-size: 48px;
-  color: #000;
+.title_stocks {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.button_wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  z-index: 10;
+}
+
+.btn {
+  // background: #000;
+}
+
+.btn_preview {
+  transform: translateX(-50px);
+  cursor: pointer;
+}
+
+.btn_next {
+  transform: translateX(50px);
+  cursor: pointer;
 }
 
 .card_wrap {
+  overflow: hidden;
+  display: flex;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.card_linear {
   position: relative;
   display: flex;
   gap: 30px;

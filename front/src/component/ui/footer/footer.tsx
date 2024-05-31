@@ -5,7 +5,7 @@ import fonts from "@/component/fonts/Fonts.module.scss"
 import vk_com from "@/component/icon/social/vk.svg"
 import telegram from "@/component/icon/social/telegram.svg"
 import whatsapp from "@/component/icon/social/whatsapp.svg"
-import logo_in_footer from "@/component/icon/logo_in_footer.svg"
+import logo_in_footer from "@/component/icon/Victoria_logo_black.svg"
 
 export default function Footer() { 
       return (

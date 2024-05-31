@@ -1,0 +1,28 @@
+
+.head_page {
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .cookies {
+        display: flex;
+        gap: 5px;
+    }
+
+    .title_page {
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.block_rooms {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}

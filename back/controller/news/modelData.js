@@ -8,7 +8,7 @@ const BDoneNews = async (id) => {
 }
 // =======> FIND ALL <======> FIND ALL <===
 const BDallNews = async () => {
-  const result = await Model.dataNews.findAll({ raw: true })
+  const result = await Model.dataNews.findAll({ raw: true,  order: [['createdAt', 'DESC']]})
   return result
 }
 
@@ -24,6 +24,7 @@ const BDcreateNews = async (data) => {
     title: data.title,
     description: data.description,
     imagePath: data.imagePath,
+    status: data.status,
   })
   return result.dataValues
 }
@@ -36,6 +37,7 @@ const BDupdateNews = async (data, id) => {
     title: data.title,
     description: data.description,
     imagePath: data.imagePath,
+    status: data.status,
   })
   return await result.dataValues
 }

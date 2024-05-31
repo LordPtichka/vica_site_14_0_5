@@ -11,8 +11,11 @@ const ModelRoom = (sequelizeMethod) => {
       },
       category: { type: Sequelize.STRING },
       title: { type: Sequelize.STRING },
-      description: { type: Sequelize.STRING },
+      descriptionFull: { type: Sequelize.STRING },
+      descriptionShort: { type: Sequelize.STRING },
       price: { type: Sequelize.NUMBER },
+      area: { type: Sequelize.STRING },
+      capacity: { type: Sequelize.NUMBER },
       imagePath: { type: Sequelize.STRING },
     },
     { timestamps: true }

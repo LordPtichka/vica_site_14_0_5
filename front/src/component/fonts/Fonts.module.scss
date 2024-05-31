@@ -34,6 +34,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Fors";
+  src: url("./Fors/500FrosMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 // =======> FONTS COLOR <=========
 .color_white {
   color: #ffffff;
@@ -52,12 +59,28 @@
   font-size: 48px;
 }
 
+.bold_31 {
+  font-size: 31px;
+}
+
+.bold_24 {
+  font-size: 24px;
+}
+
 .bold_20 {
   font-size: 20px;
 }
 
+.light_18 {
+  font-size: 18px;
+}
+
 .light_16 {
   font-size: 16px;
+}
+
+.light_13 {
+  font-size: 13px;
 }
 
 // =======> FONTS FAMILY<=========
@@ -79,8 +102,21 @@
   font-style: normal;
 }
 
+.Ramillas_700 {
+  font-family: "Ramillas";
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 .Fors_300 {
   font-family: "Fors";
   font-weight: 300;
+  font-style: normal;
+}
+
+.Fors_500 {
+  font-family: "Fors";
+  font-weight: 500;
   font-style: normal;
 }
