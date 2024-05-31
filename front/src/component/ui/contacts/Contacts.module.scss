@@ -1,0 +1,54 @@
+.contacts {
+    border-top: 1px solid rgba(89, 89, 89, 0.2);
+    padding-top: 50px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+  
+  .contact_data {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 60px;
+    
+      .title_contacts {
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+      }
+      
+      .email {
+        max-width: 160px;
+        line-height: normal;
+        transition: 400ms;
+        
+          &:hover {
+              color: #262626;
+          }
+      }
+    
+      .btn_contact_list {
+        border: 1px solid #b06101;
+        border-radius: 10px;
+        max-width: 250px;
+        max-height: 50px;
+        padding: 13px 0;
+    
+        text-align: center;
+        transition: 400ms;
+        
+        &:hover {
+          color: #fff;
+          background-color: #b06101;
+        }
+      }
+    }
+
+    .yandex_map {
+      width: 600px;
+      height: 100%;
+      text-align: center;
+      background-color: rgba(89, 89, 89, 0.5);
+      border-radius: 20px;
+    }
+}

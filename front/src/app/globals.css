@@ -135,11 +135,9 @@ label {
 legend {
   display: block;
 }
-/* ============== */
+
 main {
   max-width: 1110px;
   margin: auto;
-}
-section {
-  margin: 0px 30px;
+  padding: 0 30px;
 }

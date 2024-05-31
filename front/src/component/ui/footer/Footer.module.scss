@@ -1,39 +1,55 @@
-.footer_top {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid rgba(89, 89, 89, 0.2);
-}
+.footer {
+    max-width: 1050px;
+    margin-bottom: 0;
 
-.footer_nav {
-    margin: 5% 0;
-}
+    .footer_top {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #59595933;
+    }
 
-.footer_nav_title {
-    margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
+    .footer_nav {
+        margin: 5% 0;
+    }
 
-/* >>> Проблема с текстом */
-.no_title {
-    color: rgba(0, 0, 0, .0);
-}
+    .footer_nav_title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
 
-.footer_nav_menu {
-    padding-bottom: 10px;
-}
+    .footer_nav_menu {
+        padding: 5px 0;
+    }
 
-.footer_bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(89, 89, 89, 0.2);
-}
+    .footer_link {
+        transition: 400ms;
+        
+        &:hover {
+          color: #262626;
+        }
+    }
 
-/* >>> Вписать лого в блок */
-.logo_in_footer{
-    width: 80px;
-    height: 80px;
-    /* background-image: url(../img/logo_in_footer.svg); */
+    .footer_social_block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social_link {
+        margin: 0px 0px 30px 60px;
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(89, 89, 89, 0.2);
+    }
+
+    .logo_in_footer{
+        width: 80px;
+        height: 75px;
+    }
+
 }
