@@ -14,8 +14,8 @@ export default function Footer() {
                 <div className={styles.footer_nav}>
                     <ul>
                         <li className={`${styles.footer_nav_title} ${fonts.font_for_title} ${fonts.Ramillas_500} ${fonts.bold_20}`}>Отель</li>
-                        <li className={styles.footer_nav_menu}><a className={`${styles.footer_link} ${fonts.Fors_300} ${fonts.light_16} ${fonts.color_orange}`} href="">Номера</a></li>
-                        <li className={styles.footer_nav_menu}><a className={`${styles.footer_link} ${fonts.Fors_300} ${fonts.light_16} ${fonts.color_orange}`} href="">Бронирование</a></li>
+                        <li className={styles.footer_nav_menu}><a className={`${styles.footer_link} ${fonts.Fors_300} ${fonts.light_16} ${fonts.color_orange}`} href="/rooms">Номера</a></li>
+                        <li className={styles.footer_nav_menu}><a className={`${styles.footer_link} ${fonts.Fors_300} ${fonts.light_16} ${fonts.color_orange}`} href="/booking">Бронирование</a></li>
                         <li className={styles.footer_nav_menu}><a className={`${styles.footer_link} ${fonts.Fors_300} ${fonts.light_16} ${fonts.color_orange}`} href="">Банный комплекс</a></li>
                     </ul>
                 </div>

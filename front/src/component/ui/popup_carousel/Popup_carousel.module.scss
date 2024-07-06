@@ -5,48 +5,83 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #00000030;
     backdrop-filter: blur(3px);
+    background: #00000030;
     display: none;
     align-items: center;
     justify-content: center;
 }
+
 .card_popup {
     display: flex;
+    flex-direction: column;
     width: 760px;
-    height: 500px;
+    overflow: hidden;
     border-radius: 20px;
     background: #fff;
     position: relative;
+    
+    .btn_wrap {
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        max-width: 760px;
+        width: 100%;
+       
+        .btn {
+            cursor: pointer;
+            width: 100px;
+            height: 450px;
+            
+            transition: 400ms;
+
+            &:hover {
+                background-color: #00000030;
+            }
+        }
+    }
+
+    .carousel_wrap{
+        position: relative;
+        max-width: 760px;
+        height: 450px;
+        overflow: hidden;
+
+        .carousel_linear {
+            position: relative;
+            display: flex;
+            transition: 600ms;
+            & > * {
+                width: 760px;
+                height: 450px;
+                background-size: cover;
+            }
+        }
+    }
 
     .btn_close {
+        position: absolute;
         margin: 30px 30px;
         right: 0;
         width: 30px;
         height: 30px;
-        position: absolute;
         transition: 400ms;
+
+        z-index: 11;
         &:hover {
             transform: rotate(90deg) scale(120%);
         }
     }
 }
-.img_popup {
-    border-radius: 20px 0 0 20px;
-    width: 300px;
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .bloc_text {
-    width: 460px;
-    height: 500px;
+    width: 60%;
+    height: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     padding: 30px;
 }
 

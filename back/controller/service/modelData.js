@@ -6,6 +6,11 @@ const BDoneService = async (id) => {
   if (result == null) return result
   return result
 }
+const BDnameService = async (name) => {
+  const result = await Model.dataService.findOne({ where: { title: name } })
+  if (result == null) return result
+  return result
+}
 // =======> FIND ALL <======> FIND ALL <===
 const BDallService = async () => {
   const result = await Model.dataService.findAll({ raw: true })
@@ -42,4 +47,4 @@ const BDupdateService = async (data, id) => {
   return await result.dataValues
 }
 
-export default { BDoneService, BDallService, BDdeleteService, BDcreateService, BDupdateService }
+export default { BDoneService, BDnameService, BDallService, BDdeleteService, BDcreateService, BDupdateService }

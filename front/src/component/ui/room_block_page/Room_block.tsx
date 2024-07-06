@@ -12,10 +12,10 @@ export default function Room_block (props:{roomData:[]}) {
     <div className={`${styles.rooms}`}>
         <div className={`${styles.img_room}`} style={{backgroundImage:`url(http://${process.env.HOST}/${props.roomData.imagePath})`}}></div>
         <div className={`${styles.block_information_room}`}>
-        <div className={`${styles.block_text}`}>
+          <div className={`${styles.block_text}`}>
             <div className={`${styles.block_description} ${fonts.Ramillas_500} ${fonts.bold_31}`}>
               <span>{props.roomData.category}</span>
-              <span>от<span className={`${fonts.color_orange}`}> {props.roomData.price}</span> руб</span>
+              <span>до<span className={`${fonts.color_orange}`}> {props.roomData.price}</span> руб</span>
             </div>
             <div className={`${fonts.Fors_300} ${fonts.light_13}`}>{props.roomData.descriptionFull}</div>
         </div>

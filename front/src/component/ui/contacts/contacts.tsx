@@ -24,7 +24,6 @@ export default function Contacts() {
         
         <section className={`${styles.contact_map}`}>
             <div className={`${styles.yandex_map} ${fonts.color_white}`}>
-                {/* <YMaps location = {{center: [25.229762, 55.289311], zoom: 9}} mode="vector"></YMaps> В душе не ебу что тут не работает! */}
 
                 <div style={{position:"relative",overflow:"hidden",borderRadius:"20px", height:"100%", width:"100%"}}>
                     <Link href="https://yandex.ru/maps/org/viktoriya/1048243753/?utm_medium=mapframe&utm_source=maps" style={{color:"#eee",fontSize:"12px",position:"absolute",top:"0px"}}>
@@ -33,7 +32,7 @@ export default function Contacts() {
                     <Link href="https://yandex.ru/maps/969/vyborg/category/hotel/184106414/?utm_medium=mapframe&utm_source=maps" style={{color:"#eee",fontSize:"12px",position:"absolute",top:"14px"}}>
                         Гостиница в Выборге
                     </Link>
-                    <iframe src="https://yandex.ru/map-widget/v1/?ll=28.741286%2C60.714813&mode=poi&poi%5Bpoint%5D=28.740237%2C60.714133&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1048243753&source=serp_navig&z=13.87" width="100%" height="100%" frameborder="1" allowfullscreen="true" style={{position:"relative"}}></iframe>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=28.741286%2C60.714813&mode=poi&poi%5Bpoint%5D=28.740237%2C60.714133&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1048243753&source=serp_navig&z=13.87" width="100%" height="100%" frameBorder="1" allowFullScreen={true} style={{position:"relative"}} loading="lazy"></iframe>
                 </div>
             </div>
         </section>

@@ -23,14 +23,61 @@
     width: 510px;
 }
 
-.img_service {
+.img_service_block {
+    position: relative;
     width: 100%;
     height: 200px;
     margin-bottom: 20px;
-
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    cursor: pointer;
+    transition: 400ms;
+
+    .text_in_img {
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+
+        transition: 400ms;
+    }
+
+    &:hover {
+        div#bc, div#knf {
+            filter: brightness(50%);
+            filter: blur(3px) ;
+        }
+
+        .text_in_img {
+            display: block;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
 }
+
+.img_service {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: 400ms;
+}
+
+div#bc {
+    background-position: 0 -130px;
+    background-image: url(./bc_main.webp);
+}
+
+div#knf {
+    background-position: 0 -100px;
+    background-image: url(./knf_main.webp);
+}
+
+
+
 
 .name_service {
     text-transform: uppercase;

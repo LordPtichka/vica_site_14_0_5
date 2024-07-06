@@ -5,7 +5,13 @@ import controllerBD from "./modelData.js"
 // =======> ALL <==========> ALL <=========
 const getOne = async (req, res) => {
   const result = await controllerBD.BDoneService(req.params.id)
-  if (result == null) return res.json(`объект с id: ${req.params.id}, не найден`)
+  if (result == null) return res.json(`объект с id < ${req.params.id} >, не найден`)
+  res.json(result)
+}
+// =======================================
+const getName = async (req, res) => {
+  const result = await controllerBD.BDnameService(req.params.name)
+  if (result == null) return res.json(`объект с name < ${req.params.name} >, не найден`)
   res.json(result)
 }
 
@@ -35,4 +41,4 @@ const postUpdate = async (req, res) => {
   res.status(200).json(`service update`)
 }
 
-export default { getOne, getAll, getDelete, postCreate, postUpdate }
+export default { getOne, getName, getAll, getDelete, postCreate, postUpdate }

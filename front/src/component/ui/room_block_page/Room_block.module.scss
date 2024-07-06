@@ -4,6 +4,14 @@
     justify-content: space-between;
     gap: 30px;
 
+    cursor: pointer;
+    transition: 400ms;
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+
     .img_room {
         width: 100%;
         max-width: 400px;

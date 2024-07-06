@@ -17,7 +17,7 @@ export default function Popup() {
 
 
   return (
-    <section className={styles.section_popup} id="popup" onClick={(event) => clickNoPop(event)}>
+    <section className={styles.section_popup} id="popup" onClick={(event:any) => clickNoPop(event)}>
         <div className={styles.card_popup}>
             <div className={styles.img_popup} id="imagePath"></div>
             <div className={styles.bloc_text}>

@@ -21,12 +21,12 @@ app.use(express.static("public"))
 import routerMain from "./router/routerMain.js"
 import routerNews from "./router/routeNews.js"
 import routerRoom from "./router/routeRoom.js"
-import routerService from "./router/routeRoom.js"
+import routerService from "./router/routeService.js"
 
 app.use("/", routerMain)
 app.use("/news", routerNews)
 app.use("/room", routerRoom)
-// app.use("/service", routerService)
+app.use("/service", routerService)
 
 // =========> SERVER <====================================
 

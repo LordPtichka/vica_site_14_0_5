@@ -24,7 +24,7 @@
       transition: 400ms;
 
       &:hover {
-        color: #b06101; 
+        color: #d27604; 
       }
     }
   }
@@ -49,8 +49,8 @@
       justify-content: center;
 
       .svg_contact {
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
         background-repeat: no-repeat;
         background-position: center;
         background-color: #262626;
@@ -72,7 +72,7 @@
       width: 220px;
       padding: 10px 0;
       border-radius: 20px;
-      border: #b06101 solid 2px;
+      border: #d27604 solid 2px;
   
       display: flex;
       justify-content: center;
@@ -80,7 +80,7 @@
       transition: 400ms;
   
       &:hover {
-        background-color: #b06101;
+        background-color: #d27604;
         color: white; 
       }
     }

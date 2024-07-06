@@ -8,19 +8,31 @@
     justify-content: space-between;
 }
 
-.img_rest {
+.img_rest_block {
+    position: relative;
+    overflow: hidden;
+
     width: 100%;
     height: 340px;
     
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    
-    transition: 400ms;
+
     cursor: pointer;
+    transition: 400ms;
+
+    .img_rest {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;        
+        transition: 400ms;
+    }
 
     .text_in_img {
+        position: absolute;
         display: none;
-
+        width: 100%;
         height: 100%;
         text-align: center;
         align-content: center;
@@ -29,12 +41,24 @@
     }
 
     &:hover {
-        background: rgba(0, 0, 0, 0.8);
+        .img_rest {
+            filter: brightness(50%);
+            filter: blur(3px) ;
+        }
 
         .text_in_img {
             display: block;
+            background-color: rgba(0, 0, 0, 0.4);
         }
     }
+}
+
+div#vkus {
+    background-image: url("./vkus_1.webp");
+}
+
+div#monrepa {
+    background-image: url("./vkus_1.webp");
 }
 
 .block_information {

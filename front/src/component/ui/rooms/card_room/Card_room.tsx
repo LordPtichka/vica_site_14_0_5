@@ -16,7 +16,7 @@ export default function CardRooms(props:{roomData:[]}) {
         <div className={`${styles.card_data} ${fonts.color_white}`}>
           <div className={`${styles.title_card}`}>
             <span className={`${fonts.Ramillas_500} ${fonts.bold_24}`}>{props.roomData.category}</span>
-            <span className={`${fonts.Fors_300} ${fonts.light_18}`}>от <span className={`${styles.price}`}>{props.roomData.price}</span> руб.</span>
+            <span className={`${fonts.Fors_300} ${fonts.light_18}`}>до <span className={`${styles.price}`}>{props.roomData.price}</span> руб.</span>
           </div>
           <div className={`${styles.description} ${fonts.Fors_300} ${fonts.light_13}`}>
 

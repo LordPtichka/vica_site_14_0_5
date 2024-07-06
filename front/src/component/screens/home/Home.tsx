@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from "./Home.module.scss"
 import fonts from "@/component/fonts/Fonts.module.scss"
-import Header from "@/component/ui/header_vdeo/Header"
+import Header from "@/component/ui/header_video/Header"
 import Traveline from "@/component/ui/traveline/Traveline"
 import Stock from "@/component/ui/stocks/Stock"
 import Rooms from "@/component/ui/rooms/Rooms"
@@ -13,10 +13,11 @@ import Footer from "@/component/ui/footer/footer"
 import { NextPageContext } from 'next'
 import Popup from "@/component/ui/popup/Popup"
 import Header_main from "@/component/ui/header_main/Header_main"
+import Popup_carousel from "@/component/ui/popup_carousel/Popup_carousel"
  
 
 async function getStaticProps() {
-  const res = await fetch(`http://178.67.52.137:4000/news/all`, {
+  const res = await fetch(`http://${process.env.HOST}/news/all`, {
     cache: "force-cache",
     next: {
       revalidate: 10
@@ -28,7 +29,19 @@ async function getStaticProps() {
 }
 
 async function getAllRoom() {
-  const res = await fetch(`http://178.67.52.137:4000/room/all`, {
+  const res = await fetch(`http://${process.env.HOST}/room/all`, {
+    cache: "force-cache",
+    next: {
+      revalidate: 10
+    }
+  }
+  )
+  const data = await res.json()
+  return data
+}
+
+async function getAllService() {
+  const res = await fetch(`http://${process.env.HOST}/service/all`, {
     cache: "force-cache",
     next: {
       revalidate: 10
@@ -41,6 +54,8 @@ async function getAllRoom() {
 
 
 export default async function Home() {
+
+
   return (
     <>
     <Header_main />
@@ -66,11 +81,12 @@ export default async function Home() {
         <Traveline />
         <Stock test={await getStaticProps()} />
         <Rooms roomData={await getAllRoom()}/>
-        <Restaurant />
-        <Services />
+        <Restaurant serviceData={await getAllService()}/>
+        <Services serviceData={await getAllService()}/>
         <Contacts />
         <Footer />
         <Popup />
+        <Popup_carousel />
       </main>
     </>
   )
